@@ -15,7 +15,7 @@ import ru.startandroid.androidinjector.third.ThirdActivity;
 import ru.startandroid.androidinjector.third.dagger.ThirdActivityComponent;
 
 @Module(subcomponents = {FirstActivityComponent.class, SecondActivityComponent.class, ThirdActivityComponent.class})
-public abstract class AppSubcomponentBuildersModule {
+public abstract class AppScBuildersModule {
 
     @Binds
     @IntoMap

@@ -8,7 +8,8 @@ import ru.startandroid.androidinjector.third.fragments.top.TopFragment;
 public interface TopFragmentComponent extends AndroidInjector<TopFragment> {
 
     @Subcomponent.Builder
-    public abstract class Builder extends AndroidInjector.Builder<TopFragment> {
+    abstract class Builder extends AndroidInjector.Builder<TopFragment> {
 
     }
+
 }

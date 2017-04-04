@@ -8,7 +8,8 @@ import ru.startandroid.androidinjector.second.SecondActivity;
 public interface SecondActivityComponent extends AndroidInjector<SecondActivity> {
 
     @Subcomponent.Builder
-    public abstract class Builder extends AndroidInjector.Builder<SecondActivity> {
+    abstract class Builder extends AndroidInjector.Builder<SecondActivity> {
+
     }
 
 }

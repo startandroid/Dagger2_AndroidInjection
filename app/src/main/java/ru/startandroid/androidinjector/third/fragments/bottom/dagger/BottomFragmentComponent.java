@@ -8,7 +8,7 @@ import ru.startandroid.androidinjector.third.fragments.bottom.BottomFragment;
 public interface BottomFragmentComponent extends AndroidInjector<BottomFragment> {
 
     @Subcomponent.Builder
-    public abstract class Builder extends AndroidInjector.Builder<BottomFragment> {
+    abstract class Builder extends AndroidInjector.Builder<BottomFragment> {
 
     }
 }

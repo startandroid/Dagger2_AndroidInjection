@@ -8,7 +8,8 @@ import ru.startandroid.androidinjector.third.ThirdActivity;
 public interface ThirdActivityComponent extends AndroidInjector<ThirdActivity> {
 
     @Subcomponent.Builder
-    public abstract class Builder extends AndroidInjector.Builder<ThirdActivity> {
+    abstract class Builder extends AndroidInjector.Builder<ThirdActivity> {
+
     }
 
 }
