@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AndroidInjector</string>
+    <string name="go_to_second_activity">Go to second activity</string>
+    <string name="go_to_third_activity">Go to third activity</string>
+
+    <string name="top_fragment">Top fragment</string>
+    <string name="bottom_fragment">Bottom fragment</string>
+</resources>
