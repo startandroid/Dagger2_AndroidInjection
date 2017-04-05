@@ -9,19 +9,18 @@ import javax.inject.Inject;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import dagger.android.AndroidInjection;
+import dagger.android.DaggerActivity;
 import ru.startandroid.androidinjector.R;
 import ru.startandroid.androidinjector.common.Constants;
 import ru.startandroid.androidinjector.second.SecondActivity;
 
-public class FirstActivity extends AppCompatActivity {
+public class FirstActivity extends DaggerActivity {
 
     @Inject
     FirstActivityPresenter presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        AndroidInjection.inject(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.first_activity);
         ButterKnife.bind(this);

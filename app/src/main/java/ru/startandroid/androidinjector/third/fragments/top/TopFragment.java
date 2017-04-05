@@ -1,7 +1,6 @@
 package ru.startandroid.androidinjector.third.fragments.top;
 
 import android.app.Activity;
-import android.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
@@ -11,20 +10,13 @@ import android.view.ViewGroup;
 
 import javax.inject.Inject;
 
-import dagger.android.AndroidInjection;
+import dagger.android.DaggerFragment;
 import ru.startandroid.androidinjector.R;
 
-public class TopFragment extends Fragment {
+public class TopFragment extends DaggerFragment {
 
     @Inject
     TopFragmentPresenter presenter;
-
-    @Override
-    public void onAttach(Activity activity) {
-        AndroidInjection.inject(this);
-        super.onAttach(activity);
-        Log.d("dagger", "top presenter " + presenter);
-    }
 
     @Nullable
     @Override
